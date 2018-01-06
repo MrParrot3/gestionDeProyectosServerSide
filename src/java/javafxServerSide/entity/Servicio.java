@@ -11,7 +11,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 
 /**
  *
@@ -26,7 +25,6 @@ public class Servicio implements Serializable {
     private Integer id;
     private String nombre;
     private String descripcion;
-    @ManyToMany(mappedBy="Servicios")
     private Collection<Proyecto> proyectos;
     
 
